@@ -28,6 +28,7 @@ module.exports = {
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
         // We will use TypeScript's types for component props instead
         'react/prop-types': 'off',
+        'react/require-default-props': 'off',
         // We don't want unused vars
         '@typescript-eslint/no-unused-vars': ['error'],
     },
@@ -35,10 +36,10 @@ module.exports = {
     "import/resolver": {
       "node": {
         "paths": [
-          "src"
+          "src",
         ]
       }
     }
   },
-  ignorePatterns: ['.eslintrc.js']
+  ignorePatterns: ['.eslintrc.js', 'cypress']
 };
